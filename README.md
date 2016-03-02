@@ -1,5 +1,4 @@
-
-# ${1:Project Name}
+# Material React Calculator
 
 TODO: Write a project description
 
