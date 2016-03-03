@@ -4,39 +4,40 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var scss = require('gulp-scss');
+var sass = require('gulp-sass');
 
 var paths = require('./../config').paths;
 var reload = browserSync.reload;
 
 
-class BuildSCSSTask {
+class BuildSASSTask {
 
 	constructor() {
-		this.name = 'build-scss';
-		this.watchName = 'build-scss:watch';
+		this.name = 'build-sass';
+		this.watchName = 'build-sass:watch';
 	}
 
-	buildSCSS() {
+	buildSASS() {
 		return gulp.src(paths.source.scss + '**/*.scss')
-				   .on('error', (error) => {
-				   		gutil.log("SCSS Error");
-				   		gutil.log(error.toString());
-				   })
-				   .pipe(scss())
+					.on('error', (error) => {
+						gutil.log("SASS Error");
+						gutil.log(error.toString());
+					})
+				   .pipe(sass())
+				   .pipe(autoprefixer('last 2 versions'))
 				   .pipe(gulp.dest(paths.build.css))
 				   .pipe(reload({stream: true}));
 	}
 
-	watchSCSS() {
+	watchSASS() {
 		return gulp.watch(paths.source.scss + '**/*.scss', [this.name]);
 	}
 
 	createTasks() {
-		gulp.task(this.name, () => this.buildSCSS());
-		gulp.task(this.watchName, () => this.watchSCSS());
+		gulp.task(this.name, () => this.buildSASS());
+		gulp.task(this.watchName, () => this.watchSASS());
 	}
 
 }
 
-module.exports = BuildSCSSTask;
+module.exports = BuildSASSTask;

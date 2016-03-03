@@ -6,7 +6,7 @@ var BundleLibrariesTask = require('./gulp/tasks/bundle-libraries-task');
 var BundleScriptsTask = require('./gulp/tasks/bundle-scripts-task');
 var InitBrowserSyncTask = require('./gulp/tasks/init-browser-sync-task');
 var BuildHTMLTask = require('./gulp/tasks/build-html-task');
-var BuildSCSSTask = require('./gulp/tasks/build-scss-task');
+var BuildSASSTask = require('./gulp/tasks/build-sass-task');
 
 
 /* Tasks */
@@ -22,8 +22,8 @@ initBrowserSyncTask.createTasks();
 var buildHTMLTask = new BuildHTMLTask();
 buildHTMLTask.createTasks();
 
-var buildSCSSTask = new BuildSCSSTask();
-buildSCSSTask.createTasks();
+var buildSASSTask = new BuildSASSTask();
+buildSASSTask.createTasks();
 
 
 /* Watch Task */
@@ -31,7 +31,7 @@ gulp.task('watch', [
 	initBrowserSyncTask.name,
 	bundleScriptsTask.watchName,
 	buildHTMLTask.watchName,
-	buildSCSSTask.watchName,
+	buildSASSTask.watchName,
 ]);
 
 /* Default Task */
@@ -39,5 +39,5 @@ gulp.task('default', [
 	bundleLibrariesTask.name,
 	bundleScriptsTask.name,
 	buildHTMLTask.name,
-	buildSCSSTask.name,
+	buildSASSTask.name,
 ]);

@@ -1,3 +1,35 @@
-body {
-	font-size: 14px;
+@charset 'UTF-8';
+@import 'extensions/_general';
+
+
+$default-key-dimension: 100px;
+.keypad {
+	.key-row {
+		width: $default-key-dimension * 4;
+	}
+}
+.keypad-number-grid {
+	.number-key-row {
+		width: $default-key-dimension * 3;
+	}
+}
+.key-container {
+	float: left;
+	width: $default-key-dimension;
+	height: $default-key-dimension;
+	@for $i from 1 through 2 {
+		&.height-#{$i} {
+			height: $default-key-dimension * $i;
+		}
+		&.width-#{$i} {
+			width: $default-key-dimension * $i;
+		}
+	}
+}
+.key {
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	border: 2px solid white;
+	box-sizing: border-box;
 }
