@@ -10,10 +10,19 @@ TODO: Describe the installation process
 
 TODO: Write usage instructions
 
-## Technologies
-- Gulp
-- Node
-- SCSS
+## Technical Details
+
+- **Language(s):**
+	- [JavaScript (ES6)](https://babeljs.io/docs/learn-es2015/)
+	- [SCSS](http://sass-lang.com/)
+- **Frameworks/Libraries:**
+	- [Browserify](http://browserify.org/)
+	- [Gulp](http://gulpjs.com/)
+	- [Node.js](https://nodejs.org/en/)
+	- [React](https://facebook.github.io/react/)
+- **Miscellaneous:**
+	- [Google Material Design](https://www.google.com/design/spec/material-design/introduction.html#)
+
 
 ## Contributing
 
