@@ -1,12 +1,19 @@
-var pathCSS = './css';
-var pathSCSS = './scss';
-var pathJS = './js';
-var pathJSX = './jsx';
-
+var basePath = './';
+var publicPath = './public/';
 
 module.exports.paths = {
-	'css': pathCSS,
-	'js': pathJS,
-	'jsx': pathJSX,
-	'scss': pathSCSS,
+	source: {
+		'base': basePath,
+		'css': basePath + 'css/',
+		'js': basePath + 'js/',
+		'jsx': basePath + 'jsx/',
+		'scss': basePath + 'scss/',
+		'html': publicPath,
+	},
+	build: {
+		'base': publicPath,
+		'css': publicPath + 'css/',
+		'js': publicPath + 'js/',
+		'html': publicPath,
+	},
 };

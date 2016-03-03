@@ -12,7 +12,7 @@ var pkg = require('./../../package.json');
 var reload = browserSync.reload;
 
 
-class BrowserifyLibrariesTask {
+class BundleLibrariesTask {
 
 	constructor() {
 		this.name = 'bundle-libs';
@@ -24,12 +24,12 @@ class BrowserifyLibrariesTask {
 		};
 		this.bundle = browserify(config);
 		this.output = {
-			file: 'libs.min.js',
-			path: './js',
+			file: 'libs.js',
+			path: paths.build.js,
 		};
 	}
 
-	runBundle() {
+	buildBundle() {
 		var libsBundle = this.bundle;
 		return libsBundle
 				.bundle()
@@ -38,14 +38,14 @@ class BrowserifyLibrariesTask {
 					gutil.log(error.toString());
 				})
 				.pipe(source(this.output.file))
-				.pipe(gulp.dest('./js'))
+				.pipe(gulp.dest(this.output.path))
 				.pipe(reload({stream: true}));
 	}
 
 	createTasks() {
-		gulp.task(this.name, () => this.runBundle());
+		gulp.task(this.name, () => this.buildBundle());
 	}
 
 }
 
-module.exports = BrowserifyLibrariesTask;
+module.exports = BundleLibrariesTask;
