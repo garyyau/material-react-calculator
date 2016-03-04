@@ -1,5 +1,20 @@
+@import '../node_modules/muicss/lib/sass/mui/colors';
+
+// Customize MUI variables
+$mui-primary-color: mui-color('orange', '500');
+$mui-primary-color-dark: seconmui-color('orange', '700');
+$mui-primary-color-light: mui-color('orange', '100');
+
+$mui-accent-color: mui-color('deep-orange', 'A200');
+$mui-accent-color-dark: mui-color('deep-orange', 'A100');
+$mui-accent-color-light:  mui-color('deep-orange', 'A400');
+
+@import '../node_modules/muicss/lib/sass/mui';
+
+
 html, body {
 	height: 100%;
+	font-family: 'Roboto', sans-serif;
 }
 
 .pull-left {

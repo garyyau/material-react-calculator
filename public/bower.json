@@ -1,0 +1,21 @@
+{
+  "name": "material-react-calculator",
+  "homepage": "https://github.com/garyyau/material-react-calculator",
+  "authors": [
+    "Gary Yau <gyau88@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0"
+  }
+}

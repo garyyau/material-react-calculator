@@ -5,7 +5,7 @@ var React = require('react');
 
 
 var Calculator = React.createClass({
-	render: function() {
+	render() {
 		return (
 			<div>
 				<Keypad />

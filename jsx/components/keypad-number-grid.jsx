@@ -1,52 +1,52 @@
 'use strict';
 
-var React = require('react');
 var Key = require('./key.jsx');
+var React = require('react');
 
 
 var KeypadNumberGrid = React.createClass({
-	render: function() {
+	render() {
 		return (
 			<div className="keypad-number-grid">
 				<div className="number-key-row">
 					<div className="key-container">
-						<Key value="7" />
+						<Key>7</Key>
 					</div>
 					<div className="key-container">
-						<Key value="8" />
+						<Key>8</Key>
 					</div>
 					<div className="key-container">
-						<Key value="9" />
-					</div>
-				</div>
-				<div className="number-key-row">
-					<div className="key-container">
-						<Key value="4" />
-					</div>
-					<div className="key-container">
-						<Key value="5" />
-					</div>
-					<div className="key-container">
-						<Key value="6" />
+						<Key>9</Key>
 					</div>
 				</div>
 				<div className="number-key-row">
 					<div className="key-container">
-						<Key value="1" />
+						<Key>4</Key>
 					</div>
 					<div className="key-container">
-						<Key value="2" />
+						<Key>5</Key>
 					</div>
 					<div className="key-container">
-						<Key value="3" />
+						<Key>6</Key>
+					</div>
+				</div>
+				<div className="number-key-row">
+					<div className="key-container">
+						<Key>1</Key>
+					</div>
+					<div className="key-container">
+						<Key>2</Key>
+					</div>
+					<div className="key-container">
+						<Key>3</Key>
 					</div>
 				</div>
 				<div className="number-key-row">
 					<div className="key-container width-2">
-						<Key value="0" />
+						<Key>0</Key>
 					</div>
 					<div className="key-container">
-						<Key value="." />
+						<Key>.</Key>
 					</div>
 				</div>
 			</div>

@@ -1,9 +1,8 @@
 'use strict';
 
+var Calculator = require('./components/calculator.jsx');
 var React = require('react');
 var ReactDOM = require('react-dom');
-
-var Calculator = require('./components/calculator.jsx');
 
 
 class CalculatorApp {
