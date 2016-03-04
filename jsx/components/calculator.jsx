@@ -1,21 +1,24 @@
 'use strict';
 
-import DisplayTable from './DisplayTable.jsx';
 import Keypad from './Keypad.jsx';
 import React from 'react';
+import WorkScreen from './WorkScreen.jsx';
 
 
 class Calculator extends React.Component {
-	updateDisplay() {
-		this._displayTable.refresh();
+	updateFormula() {
+		this._workScreen.refreshFormula();
+	}
+	updateValue(inputValue) {
+		this._workScreen.refreshValue(inputValue);
 	}
 	render() {
 		return (
 			<div className="calculator">
-				<DisplayTable
-					updateFormula={this.updateFormula}
+				<div className="header">Material React Calculator</div>
+				<WorkScreen
 					formula={this.props.formula}
-					ref={(displayTable) => this._displayTable = displayTable}
+					ref={(workScreen) => this._workScreen = workScreen}
 				/>
 				<Keypad
 					inputHandler={this.props.inputHandler}

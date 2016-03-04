@@ -1633,7 +1633,7 @@ th {
 .mui--text-dark-hint {
   color: rgba(0, 0, 0, 0.38); }
 
-.mui--text-light {
+.mui--text-light, .header {
   color: #FFF; }
 
 .mui--text-light-secondary {
@@ -1914,7 +1914,7 @@ body.mui-body--scroll-lock {
   font-size: 112px;
   line-height: 112px; }
 
-.mui--text-display3 {
+.mui--text-display3, .value-display {
   font-weight: 400;
   font-size: 56px;
   line-height: 56px; }
@@ -1924,7 +1924,7 @@ body.mui-body--scroll-lock {
   font-size: 45px;
   line-height: 48px; }
 
-.mui--text-display1, h1 {
+.mui--text-display1, h1, .key {
   font-weight: 400;
   font-size: 34px;
   line-height: 40px; }
@@ -1934,7 +1934,7 @@ body.mui-body--scroll-lock {
   font-size: 24px;
   line-height: 32px; }
 
-.mui--text-title, h3 {
+.mui--text-title, h3, .header {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px; }
@@ -1949,7 +1949,7 @@ body.mui-body--scroll-lock {
   font-size: 14px;
   line-height: 24px; }
 
-.mui--text-body1 {
+.mui--text-body1, html, body, .formula-display {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px; }
@@ -1975,18 +1975,42 @@ html, body {
   font-family: 'Roboto', sans-serif; }
 
 .calculator {
-  width: 400px;
-  margin: 50px 50px; }
+  margin: 50px 50px;
+  width: 400px; }
 
 /**
- * Display Styling
+ * Header Styling
  */
-.display-table {
+.header {
+  padding: 5px;
+  width: 100%;
+  background-color: #E91E63; }
+
+/**
+ * Work Screen Styling
+ */
+.work-screen {
+  position: relative;
+  padding: 7px 10px;
   width: 100%;
   height: 175px;
-  background-color: #F8BBD0;
-  border: 1px solid white;
-  box-sizing: border-box; }
+  background-color: #F8BBD0; }
+
+.formula-display {
+  width: 100%;
+  height: 60%; }
+
+.value-display-container {
+  position: absolute;
+  overflow: hidden;
+  width: 95%;
+  height: 40%; }
+
+.value-display {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  text-align: right; }
 
 /**
  * Keypad Styling
@@ -2011,9 +2035,7 @@ html, body {
     width: 200px; }
 
 .key {
+  margin: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  border: 1px solid white;
-  box-sizing: border-box;
-  font-size: 20px; }
+  border-radius: 0; }

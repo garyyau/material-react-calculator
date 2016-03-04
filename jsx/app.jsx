@@ -12,7 +12,9 @@ class CalculatorApp {
 	}
 	handleInput(value) {
 		this.formula.updateFormula(value);
-		this._calculator.updateDisplay();
+		this._calculator.updateFormula();
+
+		this._calculator.updateValue(value);
 	}
 	start() {
 		ReactDOM.render(

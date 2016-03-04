@@ -3,21 +3,53 @@
 @import 'extensions/_general';
 
 
-
 $default-key-dimension: 100px;
 .calculator {
-	width: $default-key-dimension * 4;
 	margin: 50px 50px;
+	width: $default-key-dimension * 4;
 }
+
 /**
- * Display Styling
+ * Header Styling
  */
-.display-table {
+.header {
+	@extend .mui--text-title;
+	@extend .mui--text-light;
+
+	padding: 5px;
+	width: 100%;
+	background-color: $mui-primary-color;
+}
+
+/**
+ * Work Screen Styling
+ */
+.work-screen {
+	position: relative;
+	padding: 7px 10px;
 	width: 100%;
 	height: $default-key-dimension * 1.75;
 	background-color: $mui-primary-color-light;
-	border: 1px solid white;
-	box-sizing: border-box;
+}
+.formula-display {
+	@extend .mui--text-body1;
+
+	width: 100%;
+	height: 60%;
+}
+.value-display-container {
+	position: absolute;
+	overflow: hidden;
+	width: 95%;
+	height: 40%;
+}
+.value-display {
+	@extend .mui--text-display3;
+
+	position: absolute;
+	right: 0;
+	height: 100%;
+	text-align: right;
 }
 
 /**
@@ -34,9 +66,6 @@ $default-key-dimension: 100px;
 	}
 }
 .key-container {
-	float: left;
-	width: $default-key-dimension;
-	height: $default-key-dimension;
 	@for $i from 1 through 2 {
 		&.height-#{$i} {
 			height: $default-key-dimension * $i;
@@ -45,12 +74,16 @@ $default-key-dimension: 100px;
 			width: $default-key-dimension * $i;
 		}
 	}
+
+	float: left;
+	width: $default-key-dimension;
+	height: $default-key-dimension;
 }
 .key {
+	@extend .mui--text-display1;
+
+	margin: 0;
 	width: 100%;
 	height: 100%;
-	margin: 0;
-	border: 1px solid white;
-	box-sizing: border-box;
-	font-size: 20px;
+	border-radius: 0;
 }

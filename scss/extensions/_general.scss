@@ -13,6 +13,8 @@ $mui-accent-color-light:  mui-color('deep-purple', 'A400');
 
 
 html, body {
+	@extend .mui--text-body1;
+
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
 }
