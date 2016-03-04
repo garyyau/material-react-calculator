@@ -11,17 +11,15 @@ var Keypad = React.createClass({
 			<div className="keypad">
 				<div className="key-row">
 					<div className="key-container">
-						<Key color="accent"></Key>
-					</div>
-					<div className="key-container">
 						<Key color="accent">
 							<i className="fa fa-arrow-left"></i>
 						</Key>
 					</div>
 					<div className="key-container">
-						<Key color="accent">
-							<i className="fa fa-asterisk"></i>
-						</Key>
+						<Key color="accent">/</Key>
+					</div>
+					<div className="key-container">
+						<Key color="accent">*</Key>
 					</div>
 
 					<div className="key-container">

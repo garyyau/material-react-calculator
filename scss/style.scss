@@ -5,9 +5,27 @@
 
 
 $default-key-dimension: 100px;
+.calculator {
+	width: $default-key-dimension * 4;
+	margin: 50px 50px;
+}
+/**
+ * Display Styling
+ */
+.display {
+	width: 100%;
+	height: $default-key-dimension * 1.75;
+	border: 3px solid $mui-primary-color-dark;
+	background-color: $mui-primary-color-light;
+	box-sizing: border-box;
+}
+
+/**
+ * Keypad Styling
+ */
 .keypad {
 	.key-row {
-		width: $default-key-dimension * 4;
+		width: 100%;
 	}
 }
 .keypad-number-grid {

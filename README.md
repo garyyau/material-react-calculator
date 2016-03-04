@@ -16,8 +16,10 @@ TODO: Write usage instructions
 - [JavaScript (ES6)](https://babeljs.io/docs/learn-es2015/)
 - [SCSS](http://sass-lang.com/)
 **Frameworks/Libraries:**
+- [Bower](http://bower.io/)
 - [Browserify](http://browserify.org/)
 - [Gulp](http://gulpjs.com/)
+- [MUI](https://www.muicss.com/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://facebook.github.io/react/)
 **Miscellaneous:**

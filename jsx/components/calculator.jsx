@@ -1,5 +1,6 @@
 'use strict';
 
+var Display = require('./display.jsx');
 var Keypad = require('./keypad.jsx');
 var React = require('react');
 
@@ -7,7 +8,8 @@ var React = require('react');
 var Calculator = React.createClass({
 	render() {
 		return (
-			<div>
+			<div className="calculator">
+				<Display />
 				<Keypad />
 			</div>
 		);
