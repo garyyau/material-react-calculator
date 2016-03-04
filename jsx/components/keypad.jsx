@@ -1,46 +1,67 @@
 'use strict';
 
-var Key = require('./key.jsx');
-var KeypadNumberGrid = require('./keypad-number-grid.jsx');
-var React = require('react');
+import Key from './Key.jsx';
+import KeypadNumberGrid from './KeypadNumberGrid.jsx';
+import React from 'react';
 
 
-var Keypad = React.createClass({
+class Keypad extends React.Component {
+
 	render() {
 		return (
 			<div className="keypad">
-				<div className="key-row">
+				<div className="key-row mui--clearfix">
 					<div className="key-container">
-						<Key color="accent">
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>
 							<i className="fa fa-arrow-left"></i>
 						</Key>
 					</div>
 					<div className="key-container">
-						<Key color="accent">/</Key>
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>/</Key>
 					</div>
 					<div className="key-container">
-						<Key color="accent">*</Key>
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>*</Key>
 					</div>
 
 					<div className="key-container">
-						<Key color="accent">-</Key>
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>-</Key>
 					</div>
 				</div>
-				<div className="key-row">
+				<div className="key-row mui--clearfix">
 					<div className="keypad-numbers pull-left">
-						<KeypadNumberGrid />
+						<KeypadNumberGrid
+							inputHandler={this.props.inputHandler}
+						/>
 					</div>
 					<div className="key-container height-2 pull-right">
-						<Key color="accent">+</Key>
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>+</Key>
 					</div>
 
 					<div className="key-container height-2 pull-right">
-						<Key color="accent">=</Key>
+						<Key
+							color="primary"
+							inputHandler={this.props.inputHandler}
+						>=</Key>
 					</div>
 				</div>
 			</div>
 		);
 	}
-});
+}
 
-module.exports = Keypad;
+export default Keypad;

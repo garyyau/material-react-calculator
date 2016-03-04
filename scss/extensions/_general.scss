@@ -1,13 +1,13 @@
 @import '../node_modules/muicss/lib/sass/mui/colors';
 
 // Customize MUI variables
-$mui-primary-color: mui-color('orange', '500');
-$mui-primary-color-dark: mui-color('orange', '700');
-$mui-primary-color-light: mui-color('orange', '100');
+$mui-primary-color: mui-color('pink', '500');
+$mui-primary-color-dark: mui-color('pink', '700');
+$mui-primary-color-light: mui-color('pink', '100');
 
-$mui-accent-color: mui-color('deep-orange', 'A200');
-$mui-accent-color-dark: mui-color('deep-orange', 'A100');
-$mui-accent-color-light:  mui-color('deep-orange', 'A400');
+$mui-accent-color: mui-color('deep-purple', 'A200');
+$mui-accent-color-dark: mui-color('deep-purple', 'A100');
+$mui-accent-color-light:  mui-color('deep-purple', 'A400');
 
 @import '../node_modules/muicss/lib/sass/mui';
 
@@ -15,11 +15,4 @@ $mui-accent-color-light:  mui-color('deep-orange', 'A400');
 html, body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
-}
-
-.pull-left {
-	float: left;
-}
-.pull-right {
-	float: right;
 }

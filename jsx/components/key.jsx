@@ -1,24 +1,29 @@
 'use strict';
 
-var React = require('react');
-var Button = require('muicss/react').Button;
+import React from 'react';
+import MuiCSS from 'muicss/react';
 
 
-var Key = React.createClass({
+var Button = MuiCSS.Button;
+
+class Key extends React.Component {
+	callInputHandler(event) {
+		this.props.inputHandler(this.props.children)
+	}
 	render() {
-		var keyValue = this.props.value;
 		var inputHandler = this.props.inputHandler;
-		var color = this.props.color ? this.props.color : 'primary';
+		var color = this.props.color ? this.props.color : 'dark';
 		
 		return (
 			<Button
 				className="key"
 				color={color}
+				onClick={this.callInputHandler.bind(this)}
 			>
 				{this.props.children}
 			</Button>
 		)
-	},
-});
+	}
+}
 
-module.exports = Key;
+export default Key;

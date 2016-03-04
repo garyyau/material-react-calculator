@@ -1,19 +1,28 @@
 'use strict';
 
-var Display = require('./display.jsx');
-var Keypad = require('./keypad.jsx');
-var React = require('react');
+import DisplayTable from './DisplayTable.jsx';
+import Keypad from './Keypad.jsx';
+import React from 'react';
 
 
-var Calculator = React.createClass({
+class Calculator extends React.Component {
+	updateDisplay() {
+		this._displayTable.refresh();
+	}
 	render() {
 		return (
 			<div className="calculator">
-				<Display />
-				<Keypad />
+				<DisplayTable
+					updateFormula={this.updateFormula}
+					formula={this.props.formula}
+					ref={(displayTable) => this._displayTable = displayTable}
+				/>
+				<Keypad
+					inputHandler={this.props.inputHandler}
+				/>
 			</div>
 		);
 	}
-});
+}
 
-module.exports = Calculator;
+export default Calculator;

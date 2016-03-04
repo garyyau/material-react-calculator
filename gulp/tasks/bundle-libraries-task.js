@@ -19,6 +19,7 @@ class BundleLibrariesTask {
 
 		var libs = _.keys(pkg.dependencies);
 		libs.push('muicss/react');
+
 		var config = {
 			debug: true,
 			require: libs,

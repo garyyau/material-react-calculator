@@ -391,10 +391,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #FF9800;
+  color: #E91E63;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #F57C00;
+    color: #C2185B;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -452,7 +452,7 @@ strong {
 
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #FF9800; }
+  border-bottom: 1px dotted #E91E63; }
 
 h1, h2, h3 {
   margin-top: 20px;
@@ -498,7 +498,7 @@ h4, h5, h6 {
     top: 64px; } }
 
 .mui-appbar {
-  background-color: #FF9800;
+  background-color: #E91E63;
   color: #FFF; }
 
 /**
@@ -605,21 +605,21 @@ h4, h5, h6 {
 
 .mui-btn--primary {
   color: #FFF;
-  background-color: #FF9800; }
+  background-color: #E91E63; }
   .mui-btn--primary:hover, .mui-btn--primary:focus, .mui-btn--primary:active {
     color: #FFF;
-    background-color: #ffa21a; }
+    background-color: #eb3573; }
   .mui-btn--primary[disabled]:hover, .mui-btn--primary[disabled]:focus, .mui-btn--primary[disabled]:active {
     color: #FFF;
-    background-color: #FF9800; }
+    background-color: #E91E63; }
   .mui-btn--primary.mui-btn--flat {
-    color: #FF9800;
+    color: #E91E63;
     background-color: transparent; }
     .mui-btn--primary.mui-btn--flat:hover, .mui-btn--primary.mui-btn--flat:focus, .mui-btn--primary.mui-btn--flat:active {
-      color: #FF9800;
+      color: #E91E63;
       background-color: #f2f2f2; }
     .mui-btn--primary.mui-btn--flat[disabled]:hover, .mui-btn--primary.mui-btn--flat[disabled]:focus, .mui-btn--primary.mui-btn--flat[disabled]:active {
-      color: #FF9800;
+      color: #E91E63;
       background-color: transparent; }
 
 .mui-btn--dark {
@@ -662,21 +662,21 @@ h4, h5, h6 {
 
 .mui-btn--accent {
   color: #FFF;
-  background-color: #FF6E40; }
+  background-color: #7C4DFF; }
   .mui-btn--accent:hover, .mui-btn--accent:focus, .mui-btn--accent:active {
     color: #FFF;
-    background-color: #ff815a; }
+    background-color: #8f67ff; }
   .mui-btn--accent[disabled]:hover, .mui-btn--accent[disabled]:focus, .mui-btn--accent[disabled]:active {
     color: #FFF;
-    background-color: #FF6E40; }
+    background-color: #7C4DFF; }
   .mui-btn--accent.mui-btn--flat {
-    color: #FF6E40;
+    color: #7C4DFF;
     background-color: transparent; }
     .mui-btn--accent.mui-btn--flat:hover, .mui-btn--accent.mui-btn--flat:focus, .mui-btn--accent.mui-btn--flat:active {
-      color: #FF6E40;
+      color: #7C4DFF;
       background-color: #f2f2f2; }
     .mui-btn--accent.mui-btn--flat[disabled]:hover, .mui-btn--accent.mui-btn--flat[disabled]:focus, .mui-btn--accent.mui-btn--flat[disabled]:active {
-      color: #FF6E40;
+      color: #7C4DFF;
       background-color: transparent; }
 
 .mui-btn--small {
@@ -1235,7 +1235,7 @@ h4, h5, h6 {
     .mui-select:focus > select {
       height: 33px;
       margin-bottom: -1px;
-      border-color: #FF9800;
+      border-color: #E91E63;
       border-width: 2px; }
   .mui-select > select {
     -webkit-animation-duration: 0.0001s;
@@ -1267,7 +1267,7 @@ h4, h5, h6 {
       outline: 0;
       height: 33px;
       margin-bottom: -1px;
-      border-color: #FF9800;
+      border-color: #E91E63;
       border-width: 2px; }
     .mui-select > select:disabled {
       color: rgba(0, 0, 0, 0.38);
@@ -1355,9 +1355,9 @@ th {
       .mui-tabs__bar > li > a:hover {
         text-decoration: none; }
     .mui-tabs__bar > li.mui--is-active {
-      border-bottom: 2px solid #FF9800; }
+      border-bottom: 2px solid #E91E63; }
       .mui-tabs__bar > li.mui--is-active > a {
-        color: #FF9800; }
+        color: #E91E63; }
   .mui-tabs__bar.mui-tabs__bar--justified {
     display: table;
     width: 100%;
@@ -1407,7 +1407,7 @@ th {
     display: block; }
     .mui-textfield > input:focus ~ label,
     .mui-textfield > textarea:focus ~ label {
-      color: #FF9800; }
+      color: #E91E63; }
 
 .mui-textfield--float-label > label {
   position: absolute;
@@ -1469,7 +1469,7 @@ th {
   background-image: none; }
   .mui-textfield > input:focus,
   .mui-textfield > textarea:focus {
-    border-color: #FF9800;
+    border-color: #E91E63;
     border-width: 2px; }
   .mui-textfield > input:disabled, .mui-textfield > input:-moz-read-only,
   .mui-textfield > textarea:disabled,
@@ -1643,13 +1643,13 @@ th {
   color: rgba(255, 255, 255, 0.3); }
 
 .mui--text-accent {
-  color: rgba(255, 110, 64, 0.87); }
+  color: rgba(124, 77, 255, 0.87); }
 
 .mui--text-accent-secondary {
-  color: rgba(255, 110, 64, 0.54); }
+  color: rgba(124, 77, 255, 0.54); }
 
 .mui--text-accent-hint {
-  color: rgba(255, 110, 64, 0.38); }
+  color: rgba(124, 77, 255, 0.38); }
 
 .mui--text-black {
   color: #000; }
@@ -1974,12 +1974,6 @@ html, body {
   height: 100%;
   font-family: 'Roboto', sans-serif; }
 
-.pull-left {
-  float: left; }
-
-.pull-right {
-  float: right; }
-
 .calculator {
   width: 400px;
   margin: 50px 50px; }
@@ -1987,11 +1981,11 @@ html, body {
 /**
  * Display Styling
  */
-.display {
+.display-table {
   width: 100%;
   height: 175px;
-  border: 3px solid #FF9800;
-  background-color: #FFE0B2;
+  background-color: #F8BBD0;
+  border: 1px solid white;
   box-sizing: border-box; }
 
 /**
@@ -2019,6 +2013,7 @@ html, body {
 .key {
   width: 100%;
   height: 100%;
+  margin: 0;
   border: 1px solid white;
   box-sizing: border-box;
   font-size: 20px; }
